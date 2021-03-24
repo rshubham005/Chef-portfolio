@@ -11,11 +11,21 @@
     justify-content: space-between;
     
 }
+.nav-bar2
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color: black;
+}
 .logo
 {
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 15px;
 }
 .sidemenu
 {
@@ -37,17 +47,21 @@
     flex-direction: column;
     
 }
-.menu li
+.menu li a
 {
-    font-size: 25px;
+    font-size: 30px;
     font-family: sans-serif;
-    margin: 10px 20px;
+    margin: 15px 20px;
     font-weight: 900;
     color: rgb(180, 179, 179);
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
 }
-.menu li:hover{
+.menu li a:hover{
     color: white; 
 }
+
 .menu-btn
 {
     position: absolute;
@@ -159,6 +173,12 @@
     background-image:url(images/service.jpg);
     background-size: cover;
 }
+.service2
+{
+    text-align: center;
+    background-color: crimson;
+    background-size: cover;
+}
 .service_card
 {
     display: flex;
@@ -175,9 +195,17 @@
     border-radius: 30px;
    
 }
-.card
+.card2
 {
     opacity: 0.6;
+}
+.card2:hover
+{
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 25px 25px 25px 0px grey;
 }
 .card:hover
 {
@@ -198,6 +226,33 @@
     font-size: 18px;
     font-family: sans-serif;
     
+}
+.service-btn
+{
+    width: 220px;
+    background-color: transparent;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 25px 0px;
+    border-radius: 25px;
+    background-color: rgb(16, 190, 74);
+}
+.service-link
+{
+    text-decoration: none;
+    color: white;
+}
+.service-link:hover
+{
+    color: white;
+}
+.service-btn:hover
+{
+    width: 250px;
+    background-color: crimson;
+    transition: 1.5s;
 }
 #gallery
 {
@@ -255,6 +310,34 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.603));
     padding: 20px;
     border-radius: 20px;
+}
+.social_head
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: cursive;
+    text-align: center;
+}
+.social-icons
+{
+    
+    text-align: center;
+    font-size: 35px;
+}
+.social-icons a{
+    text-decoration: none;
+    color: rgb(179, 177, 177);
+    margin: 0px 15px;
+    padding: 10px 10px;
+    display: block;
+}
+.social-icons a:hover
+{
+    color: white;
+    border: 1px solid white;
+    
 }
 label{
     color: white;
